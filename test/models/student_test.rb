@@ -9,11 +9,15 @@ describe Student do
   end
 
   it "is invalid without a firstname" do
-    Fabricate(:student, name: "nil").valid?.must_equal false
+    @student = Student.new
+    @student.name = nil
+    @student.valid?.must_equal false
   end
 
   it "is invalid without a lastname" do
-    Fabricate(:student, surname: nil).valid?.must_equal false
+    @student = Student.new
+    @student.surname = nil
+    @student.valid?.must_equal false
   end
 
   it "returns a contact's full name as a string" do
