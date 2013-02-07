@@ -1,0 +1,6 @@
+Fabricator(:student) do
+  surname "Doe"
+  number 1119
+  status true
+  sclass "4-A"
+end

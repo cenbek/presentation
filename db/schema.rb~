@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(:version => 20130206093341) do
 
   create_table "students", :force => true do |t|
     t.integer  "number"
-    t.string   "name"
-    t.string   "surname"
+    t.string   "name", :null => false
+    t.string   "surname", :null => false
     t.boolean  "status"
     t.string   "sclass"
     t.datetime "created_at", :null => false
