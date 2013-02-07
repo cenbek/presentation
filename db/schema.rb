@@ -13,12 +13,13 @@
 
 ActiveRecord::Schema.define(:version => 20130206093341) do
 
-  create_table "students", :force => true do |t|
+  create_table "students", :id => false, :force => true do |t|
+    t.integer  "id",         :null => false
     t.integer  "number"
     t.string   "name"
     t.string   "surname"
     t.boolean  "status"
-    t.string   "class"
+    t.string   "sclass"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
