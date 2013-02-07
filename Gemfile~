@@ -22,6 +22,9 @@ end
 
 gem 'jquery-rails'
 
+group :test, :development do
+  gem 'minitest-rails'
+end
 
 group :test do
   gem 'minitest-rails'
