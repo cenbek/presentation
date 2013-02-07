@@ -17,7 +17,7 @@ describe Student do
   end
 
   it "returns a contact's full name as a string" do
-    Fabricate(:student, name: "John", surname: "Doe").name.must_equal "rfesr"
+    Fabricate(:student, name: "John", surname: "Doe").name.must_equal "John"
   end
 
 end

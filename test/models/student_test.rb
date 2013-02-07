@@ -9,7 +9,7 @@ describe Student do
   end
 
   it "is invalid without a firstname" do
-    Fabricate(:student, name: "").valid?.must_equal false
+    Fabricate(:student, name: "nil").valid?.must_equal false
   end
 
   it "is invalid without a lastname" do
