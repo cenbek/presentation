@@ -15,6 +15,7 @@ class Spinach::Features::StudentApplication < Spinach::FeatureSteps
   end
 
   step 'I should see "Appointment has saved" message.' do
-    assert page.has_selector?("div#error",:text=>"selam")
+    assert page.has_selector?("div#error",:text=>"Applicaton has saved")
   end
+  
 end

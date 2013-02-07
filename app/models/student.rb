@@ -1,3 +1,3 @@
 class Student < ActiveRecord::Base
-  attr_accessible :class, :name, :number, :status, :surname
+  attr_accessible :sclass, :name, :number, :status, :surname
 end

@@ -9,10 +9,10 @@ describe "Applications Integration Test" do
 	
  	it "should be routable" do
 				assert_routing new_application_path, :controller => "applications", :action => "new"
-		end
+	end
 		
-	it "shold route to application new page" do
+	it "should route to application new page" do
 	 		assert_equal '/applications/new', path
 	end
- 
+
 end
