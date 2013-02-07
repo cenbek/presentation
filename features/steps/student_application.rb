@@ -15,8 +15,6 @@ class Spinach::Features::StudentApplication < Spinach::FeatureSteps
   end
 
   step 'I should see "Appointment has saved" message.' do
-    #pending 'step not implemented'
-    #assert_equal 'Post was successfully created.', flash[:notice]
-    assert page.has_selector?("div#error")
+    assert page.has_selector?("div#error",:text=>"selam")
   end
 end
