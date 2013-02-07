@@ -1,4 +1,8 @@
 Presentation::Application.routes.draw do
+  
+  resources :students
+  resources :applications
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

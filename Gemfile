@@ -22,6 +22,15 @@ end
 
 gem 'jquery-rails'
 
+group :test, :development do
+  gem 'minitest-rails'
+end
+
+group :test do
+  gem 'minitest-rails'
+  gem "minitest-rails-capybara"
+  gem 'spinach-rails'
+end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
