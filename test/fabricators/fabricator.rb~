@@ -1,4 +1,5 @@
 Fabricator(:student) do
+  name nil
   surname "Doe"
   number 1119
   status true
