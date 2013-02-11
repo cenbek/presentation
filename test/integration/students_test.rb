@@ -1,23 +1,20 @@
 require "minitest_helper"
 
-# To be handled correctly this spec must end with "Integration Test"
 describe "Students Integration Test" do
+  before do
+    get new_student_path
+  end
   
-		it "should be routable" do
-				assert_routing students_path, :controller => "students", :action => "index"
-		end
-
-	it "shold route to xyz" do
-			get students_path  # bunu before do da tanımla
-  		assert_equal '/students', path
-	end
+  it "should apply successfuly" do
+    joe = Student.new(Fabricate.attributes_for :student)
+    post "/students", :id => joe.id
+    path.must_equal "/students"
+  end
   
-  it "responce should return succes" do
-			#assert_response :success
-	end
-
-
+  it "should not apply" do
+    get new_student_path
+    joe = Student.new(Fabricate.attributes_for :student, name: nil)
+    post "/students", :id => joe.id
+    path.must_equal new_student_path
+  end  
 end
-
-
-    
