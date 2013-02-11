@@ -51,6 +51,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     fabrication (2.5.4)
+    ffaker (1.15.0)
     ffi (1.3.1)
     gherkin-ruby (0.2.1)
     hike (1.2.1)
@@ -151,6 +152,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 3.2.1)
   fabrication
+  ffaker
   jquery-rails
   minitest-rails
   minitest-rails-capybara
