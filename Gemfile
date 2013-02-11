@@ -8,6 +8,7 @@ group :test, :development do
   gem 'minitest-rails'
   gem 'capybara'
   gem 'fabrication'
+  gem 'ffaker'
 end
 group :test do
   gem "minitest-rails-capybara"

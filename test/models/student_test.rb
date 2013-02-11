@@ -1,8 +1,8 @@
 require "minitest_helper"
 
 describe Student do
-  before do 
-  end
+#  must { have_valid(:name).when("Good") }
+#  wont { have_valid(:name).when(nil, "") }
 
   it "has a valid factory" do
     Fabricate(:student).valid?.must_equal true
